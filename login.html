@@ -357,13 +357,28 @@
     }
 
 </style>
+
+<script type="text/javascript">
+    //var login = document.getElementsById('username');
+    function gohome(){
+        var number = document.getElementById('username');
+        if(number.value == "S0836.0054.2018"){
+            window.location = "https://luckius.github.io/olams/Olaslounge.html"
+        }else{
+            window.location = "https://luckius.github.io/olams/olamslounge2.html"
+        }
+        //alert(number.value);
+        //window.location = "https://luckius.github.io/olams/Olaslounge.html"
+    }
+</script>
+
 <div class="card">
     <div class="card-header">
         <span class="head_card">User's Login page</span>
     </div>
     <div class="card-body">
         <table id="customers" class="table table-bordered">
-                        <form action="https://olas.heslb.go.tz/index.php/olas/user/login_process" method="post" accept-charset="utf-8"></form>
+                        <form action="" method="post" accept-charset="utf-8"></form>
 <input type="hidden" name="csrf_heslb_live" value="f7417cfb08df4a9d7fd891ab83e7733c">        
 
             <tbody><tr class="form4"><td colspan="2">&nbsp;</td></tr>
@@ -416,7 +431,8 @@
 
 
             <tr>
-            <td colspan="2" align="center"><p align="center"> <input type="submit" name="submit" value="Login" class="greenButton btn btn-success">
+            <td colspan="2" align="center"><p align="center"> 
+                <input onclick="gohome()" id="login" type="submit" name="submit" value="Login" class="greenButton btn btn-success">
             <br>
 
             <!--<br />
