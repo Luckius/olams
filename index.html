@@ -1,0 +1,1762 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)https://olas.heslb.go.tz/index.php/olas/Olas/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    
+    <title>OLAMS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
+    <meta name="description" content="REPAYMENT,REFUND,AND RECOVERY">
+    <meta name="msapplication-tap-highlight" content="no">
+    <!--
+    -->
+    <link rel="stylesheet" type="text/css" href="./index_files/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="./index_files/buttons.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="./index_files/responsive.dataTables.min.css">
+    <link rel="shortcut icon" href="https://olas.heslb.go.tz/assets/ico/logo.png">
+    <link href="./index_files/main.css" rel="stylesheet">
+    <link href="./index_files/select2.min.css" rel="stylesheet">
+    <link href="./index_files/dataTables.bootstrap.css" rel="stylesheet">
+    <script src="./index_files/jquery.min.js.download"></script>
+    <link rel="stylesheet" href="./index_files/global.css" type="text/css">
+    <link rel="stylesheet" href="./index_files/table.css" type="text/css">
+    <link href="./index_files/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="./index_files/dataTables.bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="./index_files/font-awesome.min(1).css">
+
+    <!-- Added for testing, can be removed if css results are contradicting -->
+    <!--<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />-->
+
+    
+        <style type="text/css">
+        .modal-backdrop{
+            z-index:0;
+        }
+        .modal-backdrop {
+            display:none;
+        }
+        .btn-basic{
+            border 2px solid #1e6641;
+            background-color: #1e6641;
+            width: 100%;
+        }
+
+    </style>
+    <style>
+        .app-footer-left{
+            display: block !important;
+        }
+        .btn-secondary {
+            color: white !important;
+        }
+        .header_banner {
+            border-bottom: 5px solid #42B3E5;
+            position: relative;
+        }
+        .app-page-title{
+            padding: 8px 30px 8px 30px;
+            margin: -8px -30px 8px;
+            position: relative;
+        }
+        .vertical-nav-menu a:hover{
+            background-color: #42B3E5 !important;
+            color:#fff;
+        }
+    </style>
+
+
+<style type="text/css">/* Chart.js */
+@-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}</style></head>
+<body id="style-6">
+
+<div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+    <div class="app-header header-shadow header_banner" style=" height: 80px;">
+        <div class="app-header__logo">
+            <div class="">
+                <img src="./index_files/logo.png" style="width:90%;">
+            </div>
+            <div class="header__pane ml-auto">
+                <div>
+                    <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="app-header__mobile-menu">
+            <div>
+                <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                </button>
+            </div>
+        </div>
+        <div class="app-header__menu">
+                <span>
+                    <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                        <span class="btn-icon-wrapper">
+                            <i class="fa fa-ellipsis-v fa-w-6"></i>
+                        </span>
+                    </button>
+                </span>
+        </div>
+        <div class="app-header__content">
+            <div class="app-header-left" style="width: 100%; text-align: center;display: block;">
+
+                <h4 style="padding-bottom: 0px; margin-bottom: 0px;">HIGHER EDUCATION STUDENTS' LOANS BOARD</h4>
+                Online Loan Application and Management System
+
+                <!--<div class="search-wrapper">
+                    <div class="input-holder">
+                        <input type="text" class="search-input" placeholder="Type to search">
+                        <button class="search-icon"><span></span></button>
+                    </div>
+                    <button class="close"></button>
+                </div>
+                <ul class="header-menu nav">
+                    <li class="nav-item">
+                        <a href="javascript:void(0);" class="nav-link">
+                            <i class="nav-link-icon fa fa-database"> </i>
+                            Statistics
+                        </a>
+                    </li>
+                    <li class="btn-group nav-item">
+                        <a href="javascript:void(0);" class="nav-link">
+                            <i class="nav-link-icon fa fa-edit"></i>
+                            Projects
+                        </a>
+                    </li>
+                    <li class="dropdown nav-item">
+                        <a href="javascript:void(0);" class="nav-link">
+                            <i class="nav-link-icon fa fa-cog"></i>
+                            Settings
+                        </a>
+                    </li>
+
+                </ul>-->
+            </div>
+                    </div>
+    </div>
+    <div class="ui-theme-settings">
+
+    </div>
+    <div class="app-main" id="style-6">
+        <div class="app-sidebar sidebar-shadow">
+            <div class="app-header__logo">
+                <div class="logo-src"></div>
+                <div class="header__pane ml-auto">
+                    <div>
+                        <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                                    <span class="hamburger-box">
+                                        <span class="hamburger-inner"></span>
+                                    </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="app-header__mobile-menu">
+                <div>
+                    <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                    </button>
+                </div>
+            </div>
+            <div class="app-header__menu">
+                        <span>
+                            <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                                <span class="btn-icon-wrapper">
+                                    <i class="fa fa-ellipsis-v fa-w-6"></i>
+                                </span>
+                            </button>
+                        </span>
+            </div>
+            <div class="scrollbar-sidebar">
+
+                <div class="app-sidebar__inner">
+    <ul class="vertical-nav-menu metismenu">
+        <li style="margin-top: 25px;">
+            <a href="https://olas.heslb.go.tz/index.php/olas/Olas/" class="card" style="background-color: #E4E7EC">
+                <i class="metismenu-icon pe-7s-home"></i>
+                Home page
+            </a>
+        </li>
+
+                <li style="margin-top: 5px;">
+        </li><li>
+            <!--<a href="<?/*= base_url() */?>index.php/appeals/register/" class="card" style="background-color: #E4E7EC">-->
+                            <a href="https://olas.heslb.go.tz/index.php/appeals/register/index" class="card" style="background-color: #E4E7EC;  color:green; font-weight:bold;">
+                    <i class="metismenu-icon pe-7s-world"></i>
+                    Click to Appeal
+                </a>
+                
+
+        </li>
+
+        <li style="margin-top: 5px;">
+            <a href="https://olas.heslb.go.tz/index.php/olas/olas/repayment" class="card" style="background-color: #E4E7EC; color:green; font-weight:bold;">
+                <i class="metismenu-icon pe-7s-print"></i>
+                Loan Repayment
+            </a>
+        </li>
+
+        <li style="margin-top: 5px;">
+            <a href="https://olas.heslb.go.tz/index.php/olas/user/login" class="card" style="background-color: #E4E7EC">
+                <i class="metismenu-icon pe-7s-plug"></i>
+                Login as Registered User
+            </a>
+        </li>
+    </ul>
+</div>
+            </div>
+        </div>
+        <div class="app-main__outer">
+            <div class="app-main__inner">
+                <div class="main-content">
+                    <div class="col-md-12 " style="background-color:#E4E7EC; margin-left:0px; padding-bottom: 5px;">
+    <h3 align="center" style="color:#4RDFS"><font color="green"><strong> Karibu!</strong></font></h3>
+    <div align="center">
+		<span class="style2" style="color:red">
+		<strong>
+		Loan application cycle for Academic Year 2021/2022 is Closed.
+<!--		 * Application window for 2021/2022 will be open from July 9 <sup>th</sup>, 2021 to August 31<sup>st</sup>, 2021 *
+-->		</strong>
+	</span>
+		</div>
+<style>
+    #contact_shake{
+        animation: .8s shake infinite alternate;
+    }
+    @keyframes shake {
+        0% { transform: skewX(-15deg); }
+        5% { transform: skewX(15deg); }
+        10% { transform: skewX(-15deg); }
+        15% { transform: skewX(15deg); }
+        20% { transform: skewX(0deg); }
+        100% { transform: skewX(0deg); }
+    }
+</style>
+<hr style="border: 2px solid #fff">
+<div style="margin-bottom: -20px;">
+	<!--<p>Welcome to Online Loan Application and Management System <b>(OLAMS)</b>. ONLY Tanzanian Nationals are eligible to use the system.
+		Kindly provide TRUE information about yourself and follow all the instructions.
+	</p>-->
+    <p>
+        </p><div style="margin-bottom: -5px;text-align: justify">Welcome to the HESLB’s Online Loan Application System <b>(OLAMS)</b> for <b>2021/2022</b> Academic Year. We kindly advise you to read and consider
+        ‘<a style="color: blue" href="https://www.heslb.go.tz/Post/view_post?post=24" target="_blank">Guidelines for Loans Issuance for <b>2021/2022</b></a><b>’
+            </b> Academic Year available in <a href="https://www.heslb.go.tz/" target="_blank">www.heslb.go.tz</a> before you start application. Make sure you provide TRUE information.</div>
+        <center id="contact_shake">In case of enquires, contact us during work hours <strong>(0830 hrs - 1700hrs)</strong> through:
+        <br><strong><i class="fa fa-whatsapp" style="font-size:15px"></i> 0736 66 55 33 </strong>(WhattsApp); <strong><i class="fa fa-phone" style="font-size:15px"></i> 022 550 7910</strong> (Calls from any network); <i class="fa fa-envelope" style="font-size:15px"></i> <strong>adcp@heslb.go.tz</strong>.</center>
+    <p></p>
+</div></div>
+<style>
+    .label {
+        display: inline;
+        padding: .2em .6em .3em;
+        font-size: 75%;
+        font-weight: bold;
+        line-height: 1;
+        color: #fff;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: baseline;
+        border-radius: .25em;
+    }
+    .label-warning{
+        background-color: #f39c12 !important;
+    }
+    fieldset {
+        display: block;
+        margin-inline-start: 2px;
+        margin-inline-end: 2px;
+        padding-block-start: 0.35em;
+        padding-inline-start: 0.75em;
+        padding-inline-end: 0.75em;
+        padding-block-end: 0.625em;
+        min-inline-size: min-content;
+        border-width: 1px;
+        border-style: groove;
+        border-color: threedface;
+        border-image: initial;
+        height: 100%;
+    }
+    legend {
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 20px;
+        padding-top: 20px;
+        line-height: inherit;
+        color: #333;
+        border: 0;
+        padding-inline-start: 10px;
+        padding-inline-end: 10px;
+        border-bottom: 1px solid #e5e5e5;
+    }
+    a:visited {
+        color: #CC6633;
+    }
+    a:link {
+        color: #CC6633;
+    }
+    a:visited {
+        color: #CC6633;
+    }
+    a:link {
+        color: #CC6633;
+    }
+    .formInfo a, .formInfo a:active, formInfo a:visited {
+        background-color: #FF0000;
+        /*font-size: 1.3em;*/
+        font-weight: bold;
+        padding: 1px 2px;
+        margin-left: 5px;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+
+    fieldset a{
+        font-size: 12px;
+    }
+</style>
+<div class="col-md-12" style="background-color:#42B3E5">
+    <strong> <span style="color:#fff;" class="label">Available choices</span>
+        <a href="https://olas.heslb.go.tz/index.php/olas/Olas/#" style="text-decoration:none;color:white;" class="label label-warning pull-right"> * Applicants Loan Status </a>
+    </strong>
+</div>
+<div class="col-md-12 card" style="margin-top: 10px;">
+    <div class="row">
+        <div class="col-md-3 " style="height: 250px; padding-bottom: 5px;">
+            <fieldset class="fieldset" style="">
+                <legend>Loan Applicants</legend>
+
+                <div align="center" style="background: rgb(228, 231, 236); margin-bottom: 5px;" onmouseover="this.style.background=&#39;#C8D9ED&#39;" onmouseout="this.style.background=&#39;#E4E7EC&#39;">
+                    <a href="https://olas.heslb.go.tz/index.php/olas/pre_applicant/" class="link">Apply for Loan</a>                </div>
+
+                <div align="center" style="background: rgb(228, 231, 236);" onmouseover="this.style.background=&#39;#C8D9ED&#39;" onmouseout="this.style.background=&#39;#E4E7EC&#39;">
+                    <p align="center">
+                        <a href="https://olas.heslb.go.tz/index.php/olas/user/login" class="link">Login for Registered Applicants</a>                        <span class="formInfo">
+									<a href="https://olas.heslb.go.tz/index.php/olas/modal/fresher_login" width="775" class="jTip" name="Who should Click this links?" id="fresher" tabindex="6">?</a>									</span>
+                    </p>
+                </div>
+
+                <div align="center" style="background: rgb(228, 231, 236); margin-bottom: 5px;" onmouseover="this.style.background=&#39;#C8D9ED&#39;" onmouseout="this.style.background=&#39;#E4E7EC&#39;">
+                    <a href="https://olas.heslb.go.tz/index.php/olas/user/login" class="link">Application Status</a>                </div>
+
+                <div align="center" style="background: rgb(228, 231, 236); margin-bottom: 5px;" onmouseover="this.style.background=&#39;#C8D9ED&#39;" onmouseout="this.style.background=&#39;#E4E7EC&#39;">
+                    Recover Forgotten password &nbsp;&nbsp; <b><a href="https://olas.heslb.go.tz/index.php/olas/olas/forgot" class="link">Click here</a></b>
+                </div><br>
+            </fieldset>
+        </div>
+        <div class="col-md-3 " style="height: 250px;padding-bottom: 5px;">
+            <fieldset class="fieldset" style="">
+                <legend>Loan Beneficiaries</legend>
+                <div align="center" style="background-color:#E4E7EC; margin-bottom:10px;" onmouseover="this.style.background=&#39;#C8D9ED&#39;" onmouseout="this.style.background=&#39;#E4E7EC&#39;">
+                    <p>
+                        <a href="https://olas.heslb.go.tz/index.php/#" class="link">Create Account</a>                        <span class="formInfo">
+							<a href="https://olas.heslb.go.tz/index.php/olas/modal/conts" width="775" class="jTip" name="Who should Click this link?" id="conts2" tabindex="6">?</a>						</span>
+                    </p>
+                </div>
+                <div align="center" style="background-color:#E4E7EC; margin-bottom:10px;" onmouseover="this.style.background=&#39;#C8D9ED&#39;" onmouseout="this.style.background=&#39;#E4E7EC&#39;">
+                    <p>
+                        <a href="https://olas.heslb.go.tz/index.php/cont/cont/recover" class="link">Upload Photo</a>                        <span class="formInfo">
+                            <a href="https://olas.heslb.go.tz/index.php/olas/modal/conts" width="775" class="jTip" name="Who should Click this link?" id="conts2" tabindex="6">?</a>                        </span>
+                    </p>
+                </div>
+                <div align="center" style="background-color:#E4E7EC" onmouseover="this.style.background=&#39;#C8D9ED&#39;" onmouseout="this.style.background=&#39;#E4E7EC&#39;">
+                    <p>
+                        <a href="https://olas.heslb.go.tz/index.php/#" class="link">Login</a>                        <span class="formInfo">
+									<a href="https://olas.heslb.go.tz/index.php/olas/modal/conts" width="775" class="jTip" name="Who should Click this link?" id="conts2" tabindex="6">?</a>                    </span></p>
+                </div>
+                <p style="margin-bottom:10px"><!--(View your loan allocations, disbursements,
+                    and repayments or communicate with us)--></p>
+                <br>
+            </fieldset>
+        </div>
+        <div class="col-md-3 " style="height: 250px;padding-bottom: 5px;">
+            <fieldset class="fieldset" style="">
+                <legend>Loan Repayment Portal</legend>
+                <div align="center" style="background-color:#E4E7EC; margin-bottom:-10px" onmouseover="this.style.background=&#39;#C8D9ED&#39;" onmouseout="this.style.background=&#39;#E4E7EC&#39;">
+                    <p style="font-weight: bold;">
+<!--                        -->                        <a href="https://olas.heslb.go.tz/index.php/olas/user/register/repay?t=2" class="link">Make Repayment</a>                        <span class="formInfo">
+									<a href="https://olas.heslb.go.tz/index.php/olas/modal/repay" width="775" class="jTip" name="Who should Click this link?" id="repay" tabindex="6">?</a>								</span>
+                    </p>
+                </div>
+                <div align="center" style="background-color:#E4E7EC; margin-bottom:-10px" onmouseover="this.style.background=&#39;#C8D9ED&#39;" onmouseout="this.style.background=&#39;#E4E7EC&#39;">
+                    <p>
+<!--                        -->                        <a href="https://olas.heslb.go.tz/index.php/#" class="link">Get Loan Statement</a>                        <span class="formInfo">
+									<a href="https://olas.heslb.go.tz/index.php/olas/modal/repay" width="775" class="jTip" name="Who should Click this link?" id="repay" tabindex="6">?</a>								</span>
+                    </p>
+                </div>
+                <div align="center" style="background-color:#E4E7EC; margin-bottom:-10px" onmouseover="this.style.background=&#39;#C8D9ED&#39;" onmouseout="this.style.background=&#39;#E4E7EC&#39;">
+                    <p>
+<!--                        -->                        <a href="https://olas.heslb.go.tz/index.php/refund/refund/" class="link">Apply for Refund</a>                        <span class="formInfo">
+									<a href="https://olas.heslb.go.tz/index.php/olas/modal/repay" width="775" class="jTip" name="Who should Click this link?" id="repay" tabindex="6">?</a>								</span>
+                    </p>
+                </div>
+                <br>
+                Employers :
+                <div align="center" style="background-color:#E4E7EC; margin-bottom:-10px" onmouseover="this.style.background=&#39;#C8D9ED&#39;" onmouseout="this.style.background=&#39;#E4E7EC&#39;">
+                    <p>
+                        <a href="https://olas.heslb.go.tz/index.php/repay/employer/login" class="link">Employer Login</a>                        <span class="formInfo">
+									<a href="https://olas.heslb.go.tz/index.php/olas/modal/repay" width="775" class="jTip" name="Who should Click this link?" id="repay" tabindex="6">?</a>								</span>
+                    </p>
+                </div>
+            </fieldset>
+        </div>
+        <div class="col-md-3 " style="height: 250px;padding-bottom: 5px;">
+            <fieldset class="fieldset" style="">
+                <legend>HLIs &amp; Loan Officers</legend>
+                <div align="center" style="background-color:#E4E7EC; margin-bottom:-10px" onmouseover="this.style.background=&#39;#C8D9ED&#39;" onmouseout="this.style.background=&#39;#E4E7EC&#39;">
+                    <p>
+                        <a href="https://olas.heslb.go.tz/index.php/olas/user/login" class="link">HLIs Loan officer login</a>                        <span class="formInfo">
+									<a href="https://olas.heslb.go.tz/index.php/olas/modal/repay" width="775" class="jTip" name="Who should Click this link?" id="repay" tabindex="6">?</a>								</span>
+                    </p>
+                </div><br>
+                <p style="margin-bottom:10px">(HLIs Loan officer  <br>
+                    upload data from HLIs,  access data from HESLB, and view individual student status)</p>
+            </fieldset>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <center>
+                <span class="text-info" style="font-size:24px;"><strong>#WeweNdoFuture</strong></span>
+                <br><span style="font-size: 10px; font-weight: bold;">Timiza Wajibu Wako</span>
+            </center>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+            <div class="app-wrapper-footer" style="border-top: 6px solid #42B3E5; margin-top: 15px;">
+                <div class="app-footer">
+                    <div class="app-footer__inner">
+                        <div class="app-footer-left">
+                            © Copyright (c) 2019-2021 <a href="https://olas.heslb.go.tz/index.php/olas/Olas/">Higher Education Students' Loans Board.</a> All Rights Reserved. <a href="https://olas.heslb.go.tz/index.php/olas/Olas/">Terms of Use</a> IP : 197.250.228.180, 127.0.0.1 APP: DB1.H
+                            <ul class="nav">
+                                <li class="nav-item" style="font-size: 12px; text-align: center;">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="app-footer-right">
+                            <ul class="nav">
+                                <li class="nav-item">
+                                    <a href="javascript:void(0);" onclick="return open_online_help()" class="nav-link">
+                                        <div class="badge badge-success mr-1 ml-0">
+                                            Online Help
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <style>
+    .online_help {
+        display: none;
+        position: fixed;
+        bottom: 40px;
+        right: 2px;
+        border: 3px solid #ff08086b;
+        z-index: 9;
+        height: 500px;
+        width: 200px;
+        background-color: #efef8f;
+    }
+</style>
+<div class="online_help">
+    <div class="alert alert-info" style="background-color:rgb(200,217,237); margin-top:-7px">Online Help</div>
+<div style="margin-left:0px; padding: 10px;">
+    <li>
+        <a href="https://olas.heslb.go.tz/index.php/olas/modal/self_registration" width="775" class="jTip" name="Why self register?" id="register" tabindex="6">Why Self Registration</a>    </li>
+    <li>
+ <a href="https://olas.heslb.go.tz/index.php/olas/modal/index_format" width="775" class="jTip" name="How to format form 4 index" id="index2" tabindex="6">How to format form 4 index</a>    </li>
+    <li>
+        <a href="https://olas.heslb.go.tz/index.php/olas/modal/topay" width="900" class="jTip" name="How to Pay" id="mpesa" tabindex="6">How to Pay </a>    </li>
+    <li>
+        <a href="https://olas.heslb.go.tz/index.php/olas/modal/login" width="775" class="jTip" name="How to login" id="login" tabindex="6">How to login</a>    </li>
+    <li>
+        <a href="https://olas.heslb.go.tz/index.php/olas/modal/filling_forms" width="775" class="jTip" name="How to fill loan application form" id="form" tabindex="6">How to fill forms</a>    </li>
+</div>
+</div>
+        <script src="./index_files/js"></script>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.select2').select2();
+        $('#dataTablesofficer').dataTable({"aoColumnDefs": [{"bSortable": true, "aTargets": [5,5]}]});
+        $('#schedulelist_tb').dataTable({"aoColumnDefs": [{"bSortable": true, "aTargets": [5,5]}]});
+        $('#schedule_tb').dataTable();
+    });
+
+    function open_online_help(){
+        //alert('amamamamam');
+        //alert(document.querySelector(".online_help").style.display);
+        if(document.querySelector(".online_help").style.display == 'block'){
+            document.querySelector(".online_help").style.display = "none";
+        }else{
+            document.querySelector(".online_help").style.display = "block";
+        }
+    }
+
+    /*  $("#myModal").modal({
+          backdrop: 'static',
+          keyboard: true
+      });*/
+
+    $(window).click(function(e) {
+        /* alert(e.target.id); // gives the element's ID
+         alert(e.target.className); // gives the elements class(es)*/
+        //$('#myModal').modal('toggle');
+        // $('#modal').modal('hide');
+
+    });
+
+    $(function () {
+        var message = 'Report Export From HESLB ';
+        var now = new Date();
+        var date_string = now.getFullYear()+''+now.getMonth()+''+now.getDay();
+        var title = 'Application_Report_'+date_string;
+        $('.reconTableExport').DataTable({
+            "pageLength":30,
+            dom: 'Bfrtip',
+            buttons: [
+                {
+                    extend: 'copy',
+                },
+                {
+                    extend: 'excel',
+                    messageTop: message,
+                    title: title,
+                },
+                {
+                    extend: 'csv',
+                    title: title,
+                },
+                {
+                    extend: 'pdfHtml5',
+                    orientation: 'portrait',
+                    download: 'open',
+                    pageSize: 'LEGAL',
+                    title: title,
+                },
+                {
+                    extend: 'print',
+                    messageTop: message,
+                    title: title,
+                },
+            ]
+        });
+        $(".reconTable").DataTable();
+        $("#confirm_bill_tb").DataTable(
+
+        );
+        //$('#penalitytable').addClass('collapsed');
+    });
+</script>
+
+<script src="./index_files/jquery.min.js.download"></script>
+<script type="text/javascript" src="./index_files/main.js.download"></script>
+	<!-- jQuery -->
+<!--	<script src="--><!--assets/assets/jQuery/jQuery-2.1.4.min.js"></script>-->
+    <script src="./index_files/jquery.min.js(1).download"></script>
+
+    
+	<link rel="stylesheet" href="./index_files/jquery-ui.css">
+	<script src="./index_files/jquery-ui.js.download"></script>
+	
+	<!--<script src="< ?php  echo $this->config->config['base_url'];?>assets/dist/js/app.min.js"></script>
+     <script src="< ?php  echo $this->config->config['base_url'];?>assets/iCheck/icheck.min.js"></script>-->
+	<!-- jtip for ajax -->	
+	
+	<script src="./index_files/jtip.js.download" type="text/javascript"></script>
+	<!--global for ajax -->
+	<script src="./index_files/global.js.download" type="text/javascript"></script>
+
+    <script src="./index_files/bootstrap.min.js.download"></script>
+	
+    <script src="./index_files/jquery.dataTables.js.download"></script>
+    <script src="./index_files/dataTables.bootstrap.js.download"></script>
+    <!-- ChartJS -->
+	<script src="./index_files/Chart.js.download"></script>
+
+   
+    <script type="text/javascript">
+
+	$(document).ready(function(){ 
+		
+		$('a').click(function(){
+			$('a').removeClass('active');
+			$(this).addClass('active');
+			//$(this).hide();
+			
+		});
+	
+	
+	$('#pdf-app-form').click(function(){ 
+			var url = $(this).attr('href');
+			
+			 var conf = confirm('If you PRINT the form you will NO LONGER have the chance to EDIT your information again, Do you want to Continue');
+				if(conf){
+					window.open(url,'EnquiriesPrintout','width=700px,height=500px');
+				}
+			
+			return false;
+		});
+	
+	$('#pdf').click(function(){ 
+			var url = $(this).attr('href');
+			window.open(url,'EnquiriesPrintout','width=700px,height=500px');
+			return false;
+		});
+		
+		
+		
+		$('#pdf-package').click(function(){ 
+			var url = $(this).attr('href');
+			window.open(url,'EnquiriesPrintout','width=700px,height=500px');
+			return false;
+		});
+		
+		/* $('#pdf-package-verify').click(function(){ 
+			var url = $(this).attr('href');
+			window.open(url,'EnquiriesPrintout','width=700px,height=500px');
+			return false;
+		}); */
+		
+		
+		$('#prev-package').click(function(){ 
+			var url = $(this).attr('href');
+			window.open(url,'ApplicationPackage','width=700px,height=500px');
+			return false;
+		});
+		
+		
+		$('.pdf').click(function(){ 
+			var url = $(this).attr('href');
+			window.open(url,'PDF |'+url,'width=1000px,height=1000px');
+			return false;
+		});
+		
+	$( "#date1" ).datepicker({
+			changeMonth: true,
+			changeYear: true,
+			minDate: new Date(2014,1-1,1), maxDate: '0',
+			dateFormat: 'yy-mm-dd'
+		});
+
+
+		
+		$( "#date2" ).datepicker({
+			changeMonth: true,
+			changeYear: true,
+			minDate: new Date(2014,1-1,1), maxDate: '0',
+			dateFormat: 'yy-mm-dd'
+		});
+		
+		$( "#datepicker" ).datepicker({
+			changeMonth: true,
+			changeYear: true,
+			 /* minDate: new Date(2014,1-1,1), maxDate: '0',  */
+			onSelect:function(){
+				$('#birthdate_id').css('background','green');
+			},
+			 yearRange: "-60:+0",
+			dateFormat: 'yy-mm-dd'
+		});
+
+		$( "#datepicker_open" ).datepicker({
+			changeMonth: true,
+			changeYear: true,
+			 /* minDate: new Date(2014,1-1,1), maxDate: '0',  */
+			onSelect:function(){
+				$('#birthdate_id').css('background','green');
+			},
+			 yearRange: "-60:+0",
+			dateFormat: 'yy-mm-dd'
+		});
+		$( "#datepicker_corr_open" ).datepicker({
+			changeMonth: true,
+			changeYear: true,
+			 /* minDate: new Date(2014,1-1,1), maxDate: '0',  */
+			/*onSelect:function(){
+				$('#datepicker_corr_open').css('background','green');
+			},*/
+			 yearRange: "-60:+0",
+			dateFormat: 'yy-mm-dd'
+		});
+		$( "#datepicker_corr_close" ).datepicker({
+			changeMonth: true,
+			changeYear: true,
+			 /* minDate: new Date(2014,1-1,1), maxDate: '0',  */
+			/*onSelect:function(){
+				$('#datepicker_corr_close').css('background','re');
+			},*/
+			 yearRange: "-60:+0",
+			dateFormat: 'yy-mm-dd'
+		});
+
+		$( "#datepicker_openappeal" ).datepicker({
+			changeMonth: true,
+			changeYear: true,
+			 /* minDate: new Date(2014,1-1,1), maxDate: '0',  */
+			onSelect:function(){
+				//$('#birthdate_id').css('background','green');
+			},
+			 yearRange: "-60:+0",
+			dateFormat: 'yy-mm-dd'
+		});
+
+		$( "#datepicker_closeapeal" ).datepicker({
+			changeMonth: true,
+			changeYear: true,
+			 /* minDate: new Date(2014,1-1,1), maxDate: '0',  */
+			onSelect:function(){
+				//$('#birthdate_id').css('background','green');
+			},
+			 yearRange: "-60:+0",
+			dateFormat: 'yy-mm-dd'
+		});
+
+		$( "#datepicker_close" ).datepicker({
+			changeMonth: true,
+			changeYear: true,
+			 /* minDate: new Date(2014,1-1,1), maxDate: '0',  */
+			onSelect:function(){
+				$('#birthdate_id').css('background','green');
+			},
+			 yearRange: "-60:+0",
+			dateFormat: 'yy-mm-dd'
+		});
+		
+		
+	
+		$("#regionsDrp").change(function(){
+			// alert('here'+$(this).val());
+			// alert('here'+https://olas.heslb.go.tz/);
+			 /*dropdown post */ 
+			$.ajax({
+			url:"https://olas.heslb.go.tz/index.php/olas/dmg/buildDropDistricts",    
+			data: {id: $(this).val()},
+			type: "POST",
+			success: function(data){
+				$("#districtDrp").html(data);
+			}
+			
+			});
+	   
+		});
+
+          
+		$("#regionsDrp2").change(function(){
+                    //alert('here'+$(this).val());
+                     /*dropdown post */
+                    $.ajax({
+                    url:"https://olas.heslb.go.tz/index.php/olas/dmg/buildDropDistricts",    
+                    data: {id: $(this).val()},
+                    type: "POST",
+                    success: function(data){
+                        
+                        $("#districtDrp2").html(data);
+                    }
+                    
+                    });
+               
+                });
+		
+		
+		
+			// Enquiry attend form Js....
+	
+	$('#save').prop('disabled',true);
+	$('#save').css('opacity','0.5');
+//	$('#indexno').prop('disabled',true);
+	var status = ' ';
+	$('#narration').keyup(function(){ 
+		if($('#narration').val().length > 15){
+			$('#save').prop('disabled',false);
+			$('#save').css('opacity','1');
+		}else{
+			$('#save').prop('disabled',true);
+			$('#save').css('opacity','0.5');
+		}
+	});
+	
+	$('.status').click(function(){
+		 status = $(this).attr('id');
+		 if(status=='found'){
+			 $('#indexno').prop('disabled',false);
+		 }else if(status=='notfound'){
+			 $('#index_msg').hide(2000);
+			 $('#indexno').prop('disabled',true);
+		 }
+	});
+	
+	$('#save').click(function(){
+		if(status=='found'){
+			$('#index_msg').html('<span style="color:red;">You must enter the found Indexno</span>');
+				if($('#indexno').val().length<15){
+					return false;
+				}
+		}else{
+			$('#index_msg').hide();
+			return true;
+		}
+	});
+	
+	$('#indexno').keyup(function(){ 
+		if($(this).val().length == 15){
+			$('#index_msg').hide();
+		}
+	});
+
+		console.log('we reach here at least..');
+		$('.delete-confirm').click(function(){
+			console.log('Confirm delete..');
+				var msg = $(this).attr('data-msg');//'Are you sure';
+			console.log(msg);
+                var y = confirm(msg);
+				if(y){
+					return true;
+				}else{
+					return false;
+				}
+		});
+	
+	/* $('#indexno').blur(function(){ 
+		if($(this).val().length == 15){
+			 $('#indexno').prop('disabled',false);
+		}
+	}); */
+	// End of Enquiry attend form...
+		
+	 //Enable iCheck plugin for checkboxes
+        //iCheck for checkbox and radio inputs
+        /* $('.mailbox-messages input[type="checkbox"]').iCheck({
+          checkboxClass: 'icheckbox_flat-blue',
+          radioClass: 'iradio_flat-blue'
+        }); */
+
+		
+		//Enable check and uncheck all functionality
+        $(".checkbox-toggle").click(function () {
+          var clicks = $(this).data('clicks');
+          if (clicks) {
+            //Uncheck all checkboxes
+            $(".mailbox-messages input[type='checkbox']").iCheck("uncheck");
+            $(".fa", this).removeClass("fa-check-square-o").addClass('fa-square-o');
+          } else {
+            //Check all checkboxes
+            $(".mailbox-messages input[type='checkbox']").iCheck("check");
+            $(".fa", this).removeClass("fa-square-o").addClass('fa-check-square-o');
+          }
+          $(this).data("clicks", !clicks);
+        });
+
+		 //Handle starring for glyphicon and font awesome
+        $(".mailbox-star").click(function (e) {
+          e.preventDefault();
+          //detect type
+          var $this = $(this).find("a > i");
+          var glyph = $this.hasClass("glyphicon");
+          var fa = $this.hasClass("fa");
+
+          //Switch states
+          if (glyph) {
+            $this.toggleClass("glyphicon-star");
+            $this.toggleClass("glyphicon-star-empty");
+          }
+
+          if (fa) {
+            $this.toggleClass("fa-star");
+            $this.toggleClass("fa-star-o");
+          }
+        });
+		
+		
+
+    $('.tree li:has(ul)').addClass('parent_li').find(' > span').attr('title', 'Collapse this branch');
+    $('.tree li.parent_li > span').on('click', function (e) {
+        var children = $(this).parent('li.parent_li').find(' > ul > li');
+        if (children.is(":visible")) {
+            children.hide('fast');
+            $(this).attr('title', 'Expand this branch').find(' > i').addClass('icon-plus-sign').removeClass('icon-minus-sign');
+        } else {
+            children.show('fast');
+            $(this).attr('title', 'Collapse this branch').find(' > i').addClass('icon-minus-sign').removeClass('icon-plus-sign');
+        }
+        e.stopPropagation();
+    });
+
+		
+        $('#dataTables-officer').dataTable({"aoColumnDefs": [{"bSortable": false, "aTargets": [5,5]}]});
+        $('#dataTables-view').dataTable({"aoColumnDefs": [{"bSortable": false, "aTargets": [4,6]}]});
+        $('#dataTables-col').dataTable({"aoColumnDefs": [{"bSortable": false, "aTargets": [4,4]}]});
+        $('#dataTables-tosubmit').dataTable({"aoColumnDefs": [{"bSortable": false, "aTargets": [0]}]});
+        $('#dataTables-disburse').dataTable({"aoColumnDefs": [{"bSortable": false, "aTargets": [10]}]});
+        $('#dataTables-allocation').dataTable({"aoColumnDefs": [{"bSortable": false, "aTargets": [10]}]});
+        $('#dataTables-disbursement').dataTable({"aoColumnDefs": [{"bSortable": false, "aTargets": [10]}]});
+        $('#dataTables-trans-refund').dataTable({"aoColumnDefs": [{"bSortable": false, "aTargets": [4,6]}]});
+        $('#dataTables-mpesa-ls').dataTable({"aoColumnDefs": [{"bSortable": false, "aTargets": [4,6]}]});
+        $('#dataTables-employers').dataTable({"aoColumnDefs": [{"bSortable": false, "aTargets": [0]}]});
+        $('#dataTables-results1').dataTable({"aoColumnDefs": [{"bSortable": false, "aTargets": [0]}]});
+        $('#dataTables-results2').dataTable({"aoColumnDefs": [{"bSortable": false, "aTargets": [0]}]});
+ 
+        $('#dataTables-deductions').dataTable({"aoColumnDefs": [{"bSortable": false, "aTargets": [0]}]});
+        $('#dataTables-student-disb').dataTable({"aoColumnDefs": [{"bSortable": false, "aTargets": [0]}]});
+        $('#dataTables-returns').dataTable({"aoColumnDefs": [{"bSortable": false, "aTargets": [0]}]});
+		
+        $('#dataTables-torepay').dataTable({"aoColumnDefs": [{"bSortable": false, "aTargets": [14]}]});
+        $('#dataTables-unassignedEnquiries').dataTable({"aoColumnDefs": [{"bSortable": false, "aTargets": [11]}]});
+       
+	   $('#dataTables-inst').DataTable();
+	   $('#dataTables-lugls').DataTable();
+	   $('#dataTables-phdls').DataTable();
+	   $('#dataTables-pgdlawls').DataTable();
+	   $('#verified_request_tb').DataTable();
+	   $('#validForVERY').DataTable();
+	   $('#par_verified').dataTable({"aoColumnDefs": [{"bSortable": false, "aTargets": [0]}]});
+        //$('#dataTables-col').DataTable();
+        $('#dataTables-register').dataTable(
+            {
+                "scrollCollapse": true,
+                "paging":         false
+            }
+        );
+
+	$('.status').click(function(){
+		 status = $(this).attr('id');
+		 if(status=='found'){
+			 $('#indexno').prop('disabled',false);
+		 }else if(status=='notfound'){
+			 $('#index_msg').hide(2000);
+			 $('#indexno').prop('disabled',true);
+		 }
+	});
+	
+	$('#save').click(function(){
+		if(status=='found'){
+			$('#index_msg').html('<span style="color:red;">You must enter the found Indexno</span>');
+				if($('#indexno').val().length<15){
+					return false;
+				}
+		}else{
+			$('#index_msg').hide();
+			return true;
+		}
+	});
+	
+	$('#indexno').keyup(function(){ 
+		if($(this).val().length == 15){
+			$('#index_msg').hide();
+		}
+	});
+	// End of Enquiry attend form...
+
+		$("#collegeSelect").change(function () {
+			console.log('Switch colleges.., load courses...');
+			console.log('College changed..' + $(this).val());
+			/*dropdown post */
+			$.ajax({
+				url: "https://olas.heslb.go.tz/index.php/admin/course/buildCoursesDropDown",
+				data: {collegeCode: $(this).val()},
+				type: "POST",
+				success: function (data) {
+					$("#coursesSelect").html(data);
+				}
+
+			});
+
+		});
+	
+	//Ajax for uploading bank details
+	 		// 1: loading programs
+		$("#college" ).change(function(){ 
+			var collegeID = $("#college").val();
+			var data = "college="+collegeID; 
+			var post_url = "https://olas.heslb.go.tz/index.php/inst/uploads/loadprogs";
+			var element = '#prog'; 
+			ajaxCall(post_url,data,element,null);
+			
+		});
+	
+			// 2: loading year of study
+		$("#prog").change(function(){ 
+			var progID = $("#prog").val();
+			var data = "prog="+progID;
+			var post_url = "https://olas.heslb.go.tz/index.php/inst/uploads/loadYear";
+			var element = '#year'; 
+			ajaxCall(post_url,data,element,null);
+			
+	});
+	
+			// 3: loading upload interface
+		$("#year").change(function(){ 
+			var progID = $("#year").val();
+			var data = "year="+progID;
+			var post_url = "https://olas.heslb.go.tz/index.php/inst/uploads/load_Upload_interface";
+			var element = '#upload_interface';
+			ajaxCall(post_url,data,element,null);
+	});
+	
+	
+	// Enquiry identification Types...
+	$('#txt_idnumber').hide();
+	$('#idType').change(function(){
+		var idtype = $('#idType').val();
+		if(idtype>0){
+			$('#txt_idnumber').show(500);
+			$('#txt_idnumber').focus();
+		}else{
+			$('#txt_idnumber').hide(500);
+		}
+		
+	});
+	
+	
+	
+	
+	$('#txt_other').hide();
+	
+	$('#employer').change(function(){
+		var empType=$('#employer').val();
+			if(empType==1){
+				$('.private').removeClass('hidden');
+				$('.govmnt').addClass('hidden')
+				$('#txt_curr_employer').val('');
+				$('#txt_curr_employer').focus();
+			}else if(empType==2){
+				$('.govmnt').removeClass('hidden');
+				$('.private').removeClass('hidden');
+				$('#txt_cheque_no').focus();
+				$('#txt_curr_employer').val('');
+			}
+			else{
+				$('.private').addClass('hidden');
+				$('.govmnt').addClass('hidden');
+				$('#txt_curr_employer').val('Self Employed');
+			}
+	});
+
+	// Nature of enquiries possible combinaions
+		$("#inqr_errors").hide();
+		var errors = 0;
+		$('#chbrepay').change(function(){ 
+				
+			if($('#chbrepay').is(':checked')) {
+				if($('#chbover').is(':checked') || $('#chberroneous').is(':checked') || $('#chbrebilling').is(':checked')){
+					$('#inqr_errors').html('Contradicting nature of enquiry');
+					$('#inqr_errors').show(1000);
+					errors = 1;
+				}
+				
+			} else {
+				$("#inqr_errors").hide(1000);
+				errors = 0;
+			}
+		});
+		
+			$('#chbstatement').change(function(){
+				if($('#chbstatement').is(':checked')){
+					if($('#chbover').is(':checked') || $('#chberroneous').is(':checked') || $('#chbrebilling').is(':checked')){
+						$('#inqr_errors').html('Contradicting nature of enquiry');
+						$('#inqr_errors').show(1000);
+							errors = 1;
+						
+					} else {
+						$("#inqr_errors").hide(1000);
+							errors = 0;
+					}
+				}else{
+					$("#inqr_errors").hide(1000);
+					errors = 0;
+				}
+				
+			});
+			
+			$('#chbover').change(function(){
+				if($('#chbover').is(':checked')){
+					if($('#chbrepay').is(':checked') || $('#chberroneous').is(':checked') || $('#chbrebilling').is(':checked')){
+						$('#inqr_errors').html('Contradicting nature of enquiry');
+						$('#inqr_errors').show(1000);
+							errors = 1;
+						
+					} else {
+						$("#inqr_errors").hide(1000);
+							errors = 0;
+					}
+				 }else{
+					 $("#inqr_errors").hide(1000);
+					 errors = 0;
+				 }
+				
+			});
+			
+			$('#chberroneous').change(function(){
+				if($('#chberroneous').is(':checked')){
+					if($('#chbrepay').is(':checked') || $('#chbstatement').is(':checked')|| $('#chbover').is(':checked') || $('#chbrebilling').is(':checked')){
+						$('#inqr_errors').html('Contradicting nature of enquiry');
+						$('#inqr_errors').show(1000);
+							errors = 1;
+						
+					} else {
+						$("#inqr_errors").hide(1000);
+							errors = 0;
+					}
+				}else{
+					$("#inqr_errors").hide(1000);
+					errors = 0;
+				}
+				
+			});
+			
+			$('#chbrebilling').change(function(){
+				if($('#chbrebilling').is(':checked')){
+					if($('#chbrepay').is(':checked') || $('#chbover').is(':checked')|| $('#chberroneous').is(':checked')){
+						$('#inqr_errors').html('Contradicting nature of enquiry');
+						$('#inqr_errors').show(1000);
+							errors = 1;
+						
+					} else {
+						$("#inqr_errors").hide(1000);
+							errors = 0;
+					}
+				}
+				else{
+						$("#inqr_errors").hide(1000);
+						errors = 0;
+				}
+			});
+			
+			$('#chbother').change(function(){ 
+				if($('#chbother').is(':checked')){
+					$('#txt_other').show(500);
+					$('#txt_other').focus();
+				}
+			});
+	// End of nature of enquiries..
+	
+	$('#repay_register').click(function(){
+		if(errors){ 
+			$('#inqr_errors').fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(500).fadeIn(500);
+			return false;
+		}
+	});
+
+	// Repayment Institutions and course...
+
+		
+		var row2 = 0;  var row3 = 0;
+
+		$('#add_instituion').click(function(){
+			if(row2==0 && row3==0){
+				row2 = 1;
+				$('#instRow2').removeClass("hidden");
+			}
+			else if(row2==1 && row3==0){
+				row3 = 1;
+				$('#instRow3').removeClass("hidden");
+
+			}
+
+			 if(row2==1 && row3==1){
+				$('#add_instituion').html('- Remove Institution');
+			}else
+			{
+				$('#add_instituion').html('+ Add Institution Of Study');
+			}
+
+		});
+		
+		// remove institution...
+		$('#remove2').click(function(){
+				if(row2==1 && row3==1){	
+					$('#add_instituion').html('- Remove Institution');
+				}else
+				{
+					$('#add_instituion').html('+ Add Institution Of Study');
+				}
+			
+			row2 = 0;
+			$('#instRow2').addClass('hidden');
+			// the emptying the corresponding field values...
+			$('#institution2').val('');
+			$('#course2').val('');
+			$('#start_year2').val('');
+			$('#end_year2').val(''); 
+			
+		});	
+		$('#remove3').click(function(){ 
+				if(row2==1 && row3==1){
+					$('#add_instituion').html('- Remove Institution');
+				}else
+				{
+					$('#add_instituion').html('+ Add Institution Of Study');
+				}
+			row3 = 0;
+			$('#instRow3').addClass('hidden');
+			// the emptying the corresponding field values...
+			$('#institution3').val('');
+			$('#course3').val('');
+			$('#start_year3').val('');
+			$('#end_year3').val('');
+		});
+		
+
+    });
+		function ajaxCall(post_url,data,element,type){ //ajax call function
+			$.ajax({	
+			url: post_url,
+			type: "post",
+			data: data, 
+		 beforeSend:function(){
+				$(element).html("<option> progress............</option>");
+			},
+			success: function( response ){
+			$('input[type="submit"]').addClass('btn');
+			if((type == 'form')||(type == 'del_link' )){      
+			$('.alert-success').show();
+			}   
+			$(element).html(response);
+				/*listening to all required actions on loading the document.*/
+			},
+			error: function(){
+		// $('#main').html('<div class="alert alert-error"></div>');
+			$('.alert-error').show();
+
+			$('.alert-error').html('<strong>Error:</strong>Some errors occured during processing your request <button type="button" class="close" data-dismiss="alert">×</button>');    
+			}
+			})
+
+}//end function
+function myFunction() {
+    location.reload();
+}
+</script>
+	<!-- jQuery -->
+    <script src="./index_files/jquery.min.js(1).download"></script>	
+	<link rel="stylesheet" href="./index_files/jquery-ui.css">
+	<script src="./index_files/jquery-ui.js.download"></script>	
+	 <!-- <script src="< ?php  echo $this->config->config['base_url'];?>assets/dist/js/app.min.js"></script>
+     <script src="< ?php  echo $this->config->config['base_url'];?>assets/iCheck/icheck.min.js"></script>-->
+	 
+	<!-- jtip for ajax -->	
+	<script src="./index_files/jtip.js.download" type="text/javascript"></script>
+	<!--global for ajax -->
+	<script src="./index_files/global.js.download" type="text/javascript"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="./index_files/bootstrap.min.js.download"></script>
+	
+    <script src="./index_files/jquery.dataTables.js.download"></script>
+    <script src="./index_files/dataTables.bootstrap.js.download"></script>
+   
+    <script type="text/javascript">
+
+	$(document).ready(function(){ 
+
+	$('#pdf').click(function(){ 
+			var url = $(this).attr('href'); 
+			window.open(url,'EnquiriesPrintout','width=700px,height=500px');
+			return false;
+		});
+	
+	$( "#date1" ).datepicker({
+			changeMonth: true,
+			changeYear: true,
+			minDate: new Date(2014,1-1,1), maxDate: '0',
+			dateFormat: 'yy-mm-dd'
+		});
+		
+		$( "#date2" ).datepicker({
+			changeMonth: true,
+			changeYear: true,
+			minDate: new Date(2014,1-1,1), maxDate: '0',
+			dateFormat: 'yy-mm-dd'
+		});
+		
+		
+		
+			// Enquiry attend form Js....
+	
+	$('#save').prop('disabled',true);
+	$('#save').css('opacity','0.5');
+//	$('#indexno').prop('disabled',true);
+	var status = ' ';
+	$('#narration').keyup(function(){ 
+		if($('#narration').val().length > 15){
+			$('#save').prop('disabled',false);
+			$('#save').css('opacity','1');
+		}else{
+			$('#save').prop('disabled',true);
+			$('#save').css('opacity','0.5');
+		}
+	});
+	
+	$('.status').click(function(){
+		 status = $(this).attr('id');
+		 if(status=='found'){
+			 $('#indexno').prop('disabled',false);
+		 }else if(status=='notfound'){
+			 $('#index_msg').hide(2000);
+			 $('#indexno').prop('disabled',true);
+		 }
+	});
+	
+	$('#save').click(function(){
+		if(status=='found'){
+			$('#index_msg').html('<span style="color:red;">You must enter the found Indexno</span>');
+				if($('#indexno').val().length<15){
+					return false;
+				}
+		}else{
+			$('#index_msg').hide();
+			return true;
+		}
+	});
+	
+	$('#indexno').keyup(function(){ 
+		if($(this).val().length == 15){
+			$('#index_msg').hide();
+		}
+	});
+
+		console.log('we reach here at least..');
+		$('.delete-confirm').click(function(){
+			console.log('Confirm delete..');
+				var msg = $(this).attr('data-msg');//'Are you sure';
+			console.log(msg);
+                var y = confirm(msg);
+				if(y){
+					return true;
+				}else{
+					return false;
+				}
+		});
+	
+	/* $('#indexno').blur(function(){ 
+		if($(this).val().length == 15){
+			 $('#indexno').prop('disabled',false);
+		}
+	}); */
+	// End of Enquiry attend form...
+		
+	 //Enable iCheck plugin for checkboxes
+        //iCheck for checkbox and radio inputs
+        /* $('.mailbox-messages input[type="checkbox"]').iCheck({
+          checkboxClass: 'icheckbox_flat-blue',
+          radioClass: 'iradio_flat-blue'
+        }); */
+
+		
+		//Enable check and uncheck all functionality
+        $(".checkbox-toggle").click(function () {
+          var clicks = $(this).data('clicks');
+          if (clicks) {
+            //Uncheck all checkboxes
+            $(".mailbox-messages input[type='checkbox']").iCheck("uncheck");
+            $(".fa", this).removeClass("fa-check-square-o").addClass('fa-square-o');
+          } else {
+            //Check all checkboxes
+            $(".mailbox-messages input[type='checkbox']").iCheck("check");
+            $(".fa", this).removeClass("fa-square-o").addClass('fa-check-square-o');
+          }
+          $(this).data("clicks", !clicks);
+        });
+
+		 //Handle starring for glyphicon and font awesome
+        $(".mailbox-star").click(function (e) {
+          e.preventDefault();
+          //detect type
+          var $this = $(this).find("a > i");
+          var glyph = $this.hasClass("glyphicon");
+          var fa = $this.hasClass("fa");
+
+          //Switch states
+          if (glyph) {
+            $this.toggleClass("glyphicon-star");
+            $this.toggleClass("glyphicon-star-empty");
+          }
+
+          if (fa) {
+            $this.toggleClass("fa-star");
+            $this.toggleClass("fa-star-o");
+          }
+        });
+		
+		
+
+    $('.tree li:has(ul)').addClass('parent_li').find(' > span').attr('title', 'Collapse this branch');
+    $('.tree li.parent_li > span').on('click', function (e) {
+        var children = $(this).parent('li.parent_li').find(' > ul > li');
+        if (children.is(":visible")) {
+            children.hide('fast');
+            $(this).attr('title', 'Expand this branch').find(' > i').addClass('icon-plus-sign').removeClass('icon-minus-sign');
+        } else {
+            children.show('fast');
+            $(this).attr('title', 'Collapse this branch').find(' > i').addClass('icon-minus-sign').removeClass('icon-plus-sign');
+        }
+        e.stopPropagation();
+    });
+
+		
+        $('#dataTables-officer').dataTable({"aoColumnDefs": [{"bSortable": false, "aTargets": [5,5]}]});
+        $('#dataTables-view').dataTable({"aoColumnDefs": [{"bSortable": false, "aTargets": [4,6]}]});
+        $('#dataTables-col').dataTable({"aoColumnDefs": [{"bSortable": false, "aTargets": [4,4]}]});
+        $('#dataTables-tosubmit').dataTable({"aoColumnDefs": [{"bSortable": false, "aTargets": [0]}]});
+        $('#dataTables-disburse').dataTable({"aoColumnDefs": [{"bSortable": false, "aTargets": [10]}]});
+		
+        $('#dataTables-torepay').dataTable({"aoColumnDefs": [{"bSortable": false, "aTargets": [14]}]});
+        $('#dataTables-unassignedEnquiries').dataTable({"aoColumnDefs": [{"bSortable": false, "aTargets": [11]}]});
+       
+	   $('#dataTables-inst').DataTable();
+	   $('#tcu_progtable').DataTable();
+        //$('#dataTables-col').DataTable();
+        $('#dataTables-register').dataTable(
+            {
+                "scrollCollapse": true,
+                "paging":         false
+            }
+        );
+
+
+	$('.status').click(function(){
+		 status = $(this).attr('id');
+		 if(status=='found'){
+			 $('#indexno').prop('disabled',false);
+		 }else if(status=='notfound'){
+			 $('#index_msg').hide(2000);
+			 $('#indexno').prop('disabled',true);
+		 }
+	});
+	
+	$('#save').click(function(){
+		if(status=='found'){
+			$('#index_msg').html('<span style="color:red;">You must enter the found Indexno</span>');
+				if($('#indexno').val().length<15){
+					return false;
+				}
+		}else{
+			$('#index_msg').hide();
+			return true;
+		}
+	});
+	
+	$('#indexno').keyup(function(){ 
+		if($(this).val().length == 15){
+			$('#index_msg').hide();
+		}
+	});
+	// End of Enquiry attend form...
+
+		$("#collegeSelect").change(function () {
+			console.log('Switch colleges.., load courses...');
+			console.log('College changed..' + $(this).val());
+			/*dropdown post */
+			$.ajax({
+				url: "https://olas.heslb.go.tz/index.php/admin/course/buildCoursesDropDown",
+				data: {collegeCode: $(this).val()},
+				type: "POST",
+				success: function (data) {
+					$("#coursesSelect").html(data);
+				}
+
+			});
+
+		});
+	
+	//Ajax for uploading bank details
+	 		// 1: loading programs
+		$("#college" ).change(function(){ 
+			var collegeID = $("#college").val();
+			var data = "college="+collegeID; 
+			var post_url = "https://olas.heslb.go.tz/index.php/inst/uploads/loadprogs";
+			var element = '#prog'; 
+			ajaxCall(post_url,data,element,null);
+			
+		});
+	
+			// 2: loading year of study
+		$("#prog").change(function(){ 
+			var progID = $("#prog").val();
+			var data = "prog="+progID;
+			var post_url = "https://olas.heslb.go.tz/index.php/inst/uploads/loadYear";
+			var element = '#year'; 
+			ajaxCall(post_url,data,element,null);
+			
+	});
+	
+			// 3: loading upload interface
+		$("#year").change(function(){ 
+			var progID = $("#year").val();
+			var data = "year="+progID;
+			var post_url = "https://olas.heslb.go.tz/index.php/inst/uploads/load_Upload_interface";
+			var element = '#upload_interface';
+			ajaxCall(post_url,data,element,null);
+	});
+	
+	
+	// Enquiry identification Types...
+	$('#txt_idnumber').hide();
+	$('#idType').change(function(){
+		var idtype = $('#idType').val();
+		if(idtype>0){
+			$('#txt_idnumber').show(500);
+			$('#txt_idnumber').focus();
+		}else{
+			$('#txt_idnumber').hide(500);
+		}
+		
+	});
+	
+	
+	
+	
+	$('#txt_other').hide();
+	
+	$('#employer').change(function(){
+		var empType=$('#employer').val();
+			if(empType==1){
+				$('.private').removeClass('hidden');
+				$('.govmnt').addClass('hidden')
+				$('#txt_curr_employer').val('');
+				$('#txt_curr_employer').focus();
+			}else if(empType==2){
+				$('.govmnt').removeClass('hidden');
+				$('.private').removeClass('hidden');
+				$('#txt_cheque_no').focus();
+				$('#txt_curr_employer').val('');
+			}
+			else{
+				$('.private').addClass('hidden');
+				$('.govmnt').addClass('hidden');
+				$('#txt_curr_employer').val('Self Employed');
+			}
+	});
+
+	// Nature of enquiries possible combinaions
+		$("#inqr_errors").hide();
+		var errors = 0;
+		$('#chbrepay').change(function(){ 
+				
+			if($('#chbrepay').is(':checked')) {
+				if($('#chbover').is(':checked') || $('#chberroneous').is(':checked') || $('#chbrebilling').is(':checked')){
+					$('#inqr_errors').html('Contradicting nature of enquiry');
+					$('#inqr_errors').show(1000);
+					errors = 1;
+				}
+				
+			} else {
+				$("#inqr_errors").hide(1000);
+				errors = 0;
+			}
+		});
+		
+			$('#chbstatement').change(function(){
+				if($('#chbstatement').is(':checked')){
+					if($('#chbover').is(':checked') || $('#chberroneous').is(':checked') || $('#chbrebilling').is(':checked')){
+						$('#inqr_errors').html('Contradicting nature of enquiry');
+						$('#inqr_errors').show(1000);
+							errors = 1;
+						
+					} else {
+						$("#inqr_errors").hide(1000);
+							errors = 0;
+					}
+				}else{
+					$("#inqr_errors").hide(1000);
+					errors = 0;
+				}
+				
+			});
+			
+			$('#chbover').change(function(){
+				if($('#chbover').is(':checked')){
+					if($('#chbrepay').is(':checked') || $('#chberroneous').is(':checked') || $('#chbrebilling').is(':checked')){
+						$('#inqr_errors').html('Contradicting nature of enquiry');
+						$('#inqr_errors').show(1000);
+							errors = 1;
+						
+					} else {
+						$("#inqr_errors").hide(1000);
+							errors = 0;
+					}
+				 }else{
+					 $("#inqr_errors").hide(1000);
+					 errors = 0;
+				 }
+				
+			});
+			
+			$('#chberroneous').change(function(){
+				if($('#chberroneous').is(':checked')){
+					if($('#chbrepay').is(':checked') || $('#chbstatement').is(':checked')|| $('#chbover').is(':checked') || $('#chbrebilling').is(':checked')){
+						$('#inqr_errors').html('Contradicting nature of enquiry');
+						$('#inqr_errors').show(1000);
+							errors = 1;
+						
+					} else {
+						$("#inqr_errors").hide(1000);
+							errors = 0;
+					}
+				}else{
+					$("#inqr_errors").hide(1000);
+					errors = 0;
+				}
+				
+			});
+			
+			$('#chbrebilling').change(function(){
+				if($('#chbrebilling').is(':checked')){
+					if($('#chbrepay').is(':checked') || $('#chbover').is(':checked')|| $('#chberroneous').is(':checked')){
+						$('#inqr_errors').html('Contradicting nature of enquiry');
+						$('#inqr_errors').show(1000);
+							errors = 1;
+						
+					} else {
+						$("#inqr_errors").hide(1000);
+							errors = 0;
+					}
+				}
+				else{
+						$("#inqr_errors").hide(1000);
+						errors = 0;
+				}
+			});
+			
+			$('#chbother').change(function(){ 
+				if($('#chbother').is(':checked')){
+					$('#txt_other').show(500);
+					$('#txt_other').focus();
+				}
+			});
+	// End of nature of enquiries..
+	
+	$('#repay_register').click(function(){
+		if(errors){ 
+			$('#inqr_errors').fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(500).fadeIn(500);
+			return false;
+		}
+	});
+
+	// Repayment Institutions and course...
+
+		
+		var row2 = 0;  var row3 = 0;
+
+		$('#add_instituion').click(function(){
+			if(row2==0 && row3==0){
+				row2 = 1;
+				$('#instRow2').removeClass("hidden");
+			}
+			else if(row2==1 && row3==0){
+				row3 = 1;
+				$('#instRow3').removeClass("hidden");
+
+			}
+
+			 if(row2==1 && row3==1){
+				$('#add_instituion').html('- Remove Institution');
+			}
+
+		});
+		
+		// remove institution...
+		$('#remove2').click(function(){
+			row2 = 0;
+			$('#instRow2').addClass('hidden');
+			// the emptying the corresponding field values...
+			$('#institution2').val('');
+			$('#course2').val('');
+			$('#start_year2').val('');
+			$('#end_year2').val('');
+			
+		});	$('#remove3').click(function(){
+			row3 = 0;
+			$('#instRow3').addClass('hidden');
+			// the emptying the corresponding field values...
+			$('#institution3').val('');
+			$('#course3').val('');
+			$('#start_year3').val('');
+			$('#end_year3').val('');
+		});
+		
+
+    });
+		function ajaxCall(post_url,data,element,type){ //ajax call function
+			$.ajax({	
+			url: post_url,
+			type: "post",
+			data: data, 
+		 beforeSend:function(){
+				//var loader = "<img src='http://olas.heslb.go.tz/assets/img/indicator.gif'>";
+				var loader = '<center><i class="fa fa-spinner fa-spin fa-1x fa-fw"></i></center>';
+				$(element).html(loader);
+			},
+			success: function( response ){
+			$('input[type="submit"]').addClass('btn');
+			if((type == 'form')||(type == 'del_link' )){      
+			$('.alert-success').show();
+			}  
+			$(element).html(response);
+				/*listening to all required actions on loading the document.*/
+			},
+			error: function(){
+		// $('#main').html('<div class="alert alert-error"></div>');
+			$('.alert-error').show();
+
+			$('.alert-error').html('<strong>Error:</strong>Some errors occured during processing your request <button type="button" class="close" data-dismiss="alert">×</button>');    
+			}
+			})
+
+}//end function
+
+function myFunction() {
+    location.reload();
+}
+
+
+
+
+
+
+
+
+//</script>
+
+<script type="text/javascript" src="./index_files/select2.min.js.download"></script>
+<script src="./index_files/jspdf.min.js.download"></script>--&gt;
+<script src="./index_files/jquery.dataTables.js.download"></script>
+<script src="./index_files/dataTables.bootstrap.js.download"></script>
+
+<script type="text/javascript" src="./index_files/jquery.dataTables.min.js.download"></script>
+<script type="text/javascript" src="./index_files/dataTables.buttons.min.js.download"></script>
+<script type="text/javascript" src="./index_files/jszip.min.js.download"></script>
+<script type="text/javascript" src="./index_files/pdfmake.min.js.download"></script>
+<script type="text/javascript" src="./index_files/vfs_fonts.js.download"></script>
+<script type="text/javascript" src="./index_files/buttons.html5.min.js.download"></script>
+<script type="text/javascript" src="./index_files/buttons.print.min.js.download"></script>
+<script type="text/javascript" src="./index_files/dataTables.responsive.min.js.download"></script>
+
+<!-- Added for testing, can be removed if css results are contradicting -->
+<!--<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>-->
+<!-- #################-->
+<script src="./index_files/jtip.js.download" type="text/javascript"></script>
+<!-- ChartJS -->
+<script src="./index_files/Chart.js.download"></script>
+
+
+
+
+<div class="jvectormap-tip"></div></body></html>

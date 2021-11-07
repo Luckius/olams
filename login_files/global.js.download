@@ -1,0 +1,136 @@
+/* Global JavaScript File for working with JQuery library */
+
+// execute when the HTML file's (document object model: DOM) has loaded
+function finishAjax(id, response){
+  $('#'+id).html(unescape(response));
+  $('#'+id).fadeIn();
+}
+	
+
+ 
+$(document).ready(function(){ 
+
+ //this section is for self register  
+ 
+/* 
+ $('#selfregister_form').find('#Loading').hide();
+ $('#selfregister_form').find('#f4index2').blur(function() {	
+        // show loader 
+        //alert('here ' + $('#f4index1').val() +''+ $('#f4index2').val());
+		$('#Loading').show();
+		//$.post("http://192.168.50./schools/get_school_name", {
+		//$.post("http://41.188.154.195/schools/get_school_name", {
+     console.log($('#f4index1').val()+''+$('#f4index2').val()+' Center Number');
+		$.post("/insts.php/olas/search/ssearch", {
+			school_no: $('#f4index1').val()+''+$('#f4index2').val()
+		}, function(response){ 
+			//$('#school-name').hide();
+    //        $('#school-name').html(response);                             -------------- Misbehaves
+			//setTimeout("finishAjax('Loading', '"+escape(response)+"')", 400);
+		});
+		return false;
+});     */
+
+//end of self register
+
+$('#transaction_form').find('#datepicker').blur(function() {	
+	alert('here');
+		var dob = $('#datepicker').val();
+		alert('date=' + dob);
+				if(dob != ''){
+					dob = new Date(dob);
+					var today = new Date();
+					var age = Math.floor(Math.ceil(today - dob) / (1000 * 60 * 60 * 24 * 365));
+					$('#age').html(age+' years old');
+		
+					}
+});
+
+ 
+
+ 
+
+   //alert("here");    
+    /// make loader hidden in start
+    //$('#Loading').hide();    
+ $('#contregistration_form').find('#Loading').hide();
+ 
+ $('#contregistration_form').find('#f4index2').blur(function() {															
+        // show loader 
+        //alert('here ' + $('#f4index1').val() +''+ $('#f4index2').val());
+		$('#Loading').show();
+		//$.post("http://192.168.50.117/schools/get_school_name", {
+		//$.post("http://localhost/schools/get_school_name", {
+		$.post("/schools/get_school_name", {
+			school_no: $('#f4index1').val()+''+$('#f4index2').val()
+		}, function(response){
+			$('#Loading').hide();
+			setTimeout("finishAjax('Loading', '"+escape(response)+"')", 400);
+		});
+		return false;
+});
+
+
+
+
+///CHECK FOR NUMERIC CHARACTERS ONLY
+ $('#selfregister_form').find('#f4index2').keyup(function() {	
+//$('.keyup-numeric').keyup(function() {
+    //$('span.error-keyup-1').hide();
+    var inputVal = $(this).val();
+    var numericReg = /^\d*[0-9](|.\d*[0-9]|,\d*[0-9])?$/;
+    if(!numericReg.test(inputVal)) {
+        //$(this).after('<span class="error error-keyup-1">Numeric characters only.</span>');
+        alert('Enter Numeric Values ONLY (0-9)');
+    }
+});
+//END OF CHECKING NUMERIC CHARACTERS ONLY
+     
+
+///CHECK FOR NUMERIC CHARACTERS ONLY
+ $('#contregistration_form').find('#f4index2').keyup(function() {	
+//$('.keyup-numeric').keyup(function() {
+    //$('span.error-keyup-1').hide();
+    var inputVal = $(this).val();
+    var numericReg = /^\d*[0-9](|.\d*[0-9]|,\d*[0-9])?$/;
+    if(!numericReg.test(inputVal)) {
+        //$(this).after('<span class="error error-keyup-1">Numeric characters only.</span>');
+        alert('Enter Numeric Values ONLY (0-9)');
+    }
+});
+//END OF CHECKING NUMERIC CHARACTERS ONLY
+     
+	$('#registration_forms').find('#usernames').blur(function() {
+															
+		// get the value from the username field															
+		var username = $('#username').val();
+		
+		// Ajax request sent to the CodeIgniter controller "ajax" method "username_taken"
+		// post the username field's value
+		//$.post('http://localhost/ci_classroom/index.php/ajax/username_taken',
+	//$.post('http://localhost/ci_cct/index.php/ajax/username_taken',	
+	
+		$.post(baseurl + 'ajax/username_taken',		
+	
+		// $.post("<?php echo site_url + 'ajax/username_taken' ?>",		 
+			{ 'username':username },
+
+			// when the Web server responds to the request
+		
+			function(result) {
+				// clear any message that may have already been written
+				$('#bad_username').replaceWith('');
+				
+				// if the result is TRUE write a message to the page
+				if (result) {
+					$('#username').after('<div id="bad_username" style="color:red;">' +
+					  '<p>'+  result +': That Username is already taken. Please choose another.</p></div>');
+				}
+			}
+		);
+	});
+ 
+});
+
+ 
+  
